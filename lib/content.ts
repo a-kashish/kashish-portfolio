@@ -58,8 +58,8 @@ export const content: Content = {
     { id: "projects", label: "Projects" },
   ],
   socials: [
-    { label: "GitHub", href: "https://github.com/" }, // TODO: fill in
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/kashisharora/" },
+    { label: "GitHub", href: "https://github.com/a-kashish" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/kashisharo/" },
     { label: "Email", href: "mailto:kashish.arora@vanderbilt.edu" },
   ],
   resumeHref: "/Kashish_Arora_Resume.pdf",
