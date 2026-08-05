@@ -1,0 +1,76 @@
+.answer {
+  padding: var(--s-5);
+  border-radius: var(--r-2);
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink);
+  position: relative;
+  overflow: hidden;
+}
+
+.answerUngrounded {
+  border-left: 4px solid #c85a3f; /* muted alarm — clearly *bad* without shouting */
+  background: #fdf3ef;
+}
+
+.answerGrounded {
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.tagOn {
+  color: var(--accent);
+}
+
+.tagOff {
+  color: #c85a3f;
+}
+
+.text {
+  margin: 0;
+  padding-right: 90px;
+}
+
+.cite {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--accent);
+  background: var(--accent-tint);
+  padding: 1px 6px;
+  border-radius: var(--r-1);
+  margin-left: 2px;
+  vertical-align: 1px;
+  transition: background 180ms var(--easing);
+  cursor: pointer;
+}
+
+.cite:hover {
+  background: var(--accent);
+  color: var(--paper);
+}
+
+.warning {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #c85a3f;
+  margin-top: var(--s-3);
+  letter-spacing: 0.02em;
+}
+
+.presetOnly {
+  color: var(--muted);
+  font-size: 13px;
+  font-style: italic;
+}

@@ -1,0 +1,141 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 130px 1fr 70px;
+  gap: var(--s-3);
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: var(--r-1);
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  transition:
+    border-color 180ms var(--easing),
+    background 180ms var(--easing);
+  cursor: default;
+}
+
+.row:hover,
+.row:focus-within {
+  border-color: var(--accent-tint);
+}
+
+.rowTop {
+  background: var(--accent-soft);
+  border-color: var(--accent-tint);
+}
+
+.store {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--ink);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.storeMeta {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--faint);
+  letter-spacing: 0.04em;
+}
+
+.barTrack {
+  height: 6px;
+  background: var(--hairline);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-tint), var(--accent));
+  border-radius: 3px;
+  transform-origin: left;
+}
+
+.score {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+  text-align: right;
+}
+
+.rowTop .score {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.reveal {
+  grid-column: 1 / -1;
+  padding: var(--s-3) var(--s-2) 0 var(--s-2);
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+  border-top: 1px dashed var(--hairline);
+  margin-top: var(--s-2);
+}
+
+.matched {
+  display: inline-flex;
+  gap: 6px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.matchedTerm {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 2px 6px;
+  border-radius: var(--r-1);
+  letter-spacing: 0.02em;
+}
+
+.empty {
+  padding: var(--s-4);
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+  border: 1px dashed var(--hairline);
+  border-radius: var(--r-2);
+}
+
+.legend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--faint);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+.hint {
+  color: var(--faint);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-top: var(--s-2);
+}
+
+@media (max-width: 640px) {
+  .row {
+    grid-template-columns: 100px 1fr 60px;
+    gap: var(--s-2);
+  }
+}
