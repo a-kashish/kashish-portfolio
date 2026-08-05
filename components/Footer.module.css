@@ -1,0 +1,35 @@
+.footer {
+  padding: var(--s-8) 0 var(--s-9) 0;
+  margin-top: var(--s-6);
+  border-top: 1px solid var(--hairline);
+  color: var(--faint);
+  font-size: 13px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.credit .serif {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--muted);
+}
+
+.credit .sans {
+  font-family: var(--font-sans);
+  color: var(--muted);
+}
+
+.credit .mono {
+  font-family: var(--font-mono);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.copy {
+  color: var(--faint);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+}

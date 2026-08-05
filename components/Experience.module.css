@@ -1,0 +1,119 @@
+.section {
+  padding-top: var(--s-8);
+  padding-bottom: var(--s-8);
+  scroll-margin-top: var(--s-7);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--faint);
+  margin-bottom: var(--s-5);
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: var(--s-6);
+  padding: var(--s-5) 0;
+  border-top: 1px solid var(--hairline);
+  transition: background 200ms var(--easing);
+  border-radius: var(--r-1);
+}
+
+.entry:last-child {
+  border-bottom: 1px solid var(--hairline);
+}
+
+.entry:hover {
+  background: var(--panel);
+}
+
+.date {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  padding-top: 4px;
+}
+
+.header {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.3;
+  margin: 0 0 var(--s-2) 0;
+}
+
+.company {
+  color: var(--ink);
+  border-bottom: 1px solid var(--hairline);
+  transition: border-color 200ms var(--easing);
+}
+
+.company:hover {
+  border-bottom-color: var(--accent);
+}
+
+.body {
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.6;
+  margin: 0 0 var(--s-3) 0;
+  max-width: 60ch;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--muted);
+  padding: 3px 8px;
+  border-radius: var(--r-1);
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+}
+
+.entry:hover .tag {
+  background: var(--accent-soft);
+  border-color: var(--accent-tint);
+  color: var(--accent);
+}
+
+.more {
+  margin-top: var(--s-5);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--accent-tint);
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+.more:hover {
+  border-bottom-color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .entry {
+    grid-template-columns: 1fr;
+    gap: var(--s-2);
+  }
+}
