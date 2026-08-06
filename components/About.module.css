@@ -48,3 +48,13 @@
   padding: 6px 10px;
   letter-spacing: 0.02em;
 }
+
+.inlineLink {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent-tint);
+  transition: border-color 200ms var(--easing);
+}
+
+.inlineLink:hover {
+  border-bottom-color: var(--accent);
+}
