@@ -61,7 +61,7 @@ export const content: Content = {
     { label: "LinkedIn", href: "https://www.linkedin.com/in/kashisharo/" },
     { label: "Email", href: "mailto:kashish.arora@vanderbilt.edu" },
   ],
-  resumeHref: "/Kashish_Arora_Resume.pdf",
+  resumeHref: "/resume",
 
   about: {
     paragraphs: [
