@@ -57,7 +57,7 @@ export const content: Content = {
     { id: "projects", label: "Projects" },
   ],
   socials: [
-    { label: "GitHub", href: "https://github.com/a-kashish" },
+    { label: "GitHub", href: "https://github.com/kashish-aro" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/kashisharo/" },
     { label: "Email", href: "mailto:kashish.arora@vanderbilt.edu" },
   ],
